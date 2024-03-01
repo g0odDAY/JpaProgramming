@@ -20,7 +20,7 @@ public class SpringDataConfiguration {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/CH06_MAPPING_VALUE_TYPES?serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/CH07_MAPPING_INHERITANCE?serverTimezone=UTC");
         dataSource.setUsername("root");
         dataSource.setPassword("1234");
         return dataSource;
@@ -47,6 +47,8 @@ public class SpringDataConfiguration {
         Properties properties = new Properties();
         properties.put("hibernate.hbm2ddl.auto", "create");
         properties.put("spring.jpa.properties.hibernate.format_sql", "true");
+        properties.put("spring.jpa.show-sql", "true");
+        properties.put("logging.level.org.hibernate.SQL", "DEBUG");
         localContainerEntityManagerFactoryBean.setJpaProperties(properties);
         localContainerEntityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter());
         localContainerEntityManagerFactoryBean.setPackagesToScan("com.example.jpapractice");

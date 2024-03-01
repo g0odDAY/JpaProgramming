@@ -1,8 +1,8 @@
 package com.example.jpapractice.converter;
 
-import com.example.jpapractice.model.GermanZipcode;
-import com.example.jpapractice.model.SwissZipcode;
-import com.example.jpapractice.model.Zipcode;
+import com.example.jpapractice.model.zipcode.GermanZipcode;
+import com.example.jpapractice.model.zipcode.SwissZipcode;
+import com.example.jpapractice.model.zipcode.Zipcode;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 

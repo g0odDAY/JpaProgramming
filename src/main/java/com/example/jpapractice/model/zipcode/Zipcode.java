@@ -1,4 +1,4 @@
-package com.example.jpapractice.model;
+package com.example.jpapractice.model.zipcode;
 
 import java.util.Objects;
 

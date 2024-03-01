@@ -1,8 +1,7 @@
 package com.example.jpapractice.converter;
 
-import com.example.jpapractice.model.MonetaryAmount;
+import com.example.jpapractice.model.monetary.MonetaryAmount;
 import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.Convert;
 import jakarta.persistence.Converter;
 
 @Converter

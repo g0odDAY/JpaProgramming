@@ -1,4 +1,4 @@
-package com.example.jpapractice.model;
+package com.example.jpapractice.model.monetary;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
