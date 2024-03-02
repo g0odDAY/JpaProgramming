@@ -12,7 +12,14 @@ public class CreditCard extends BillingDetails{
     private String expMonth;
     @NotNull
     private String expYear;
-    public CreditCard(){};
+    public CreditCard(){}
+
+    @Override
+    public void pay(int amount) {
+        System.out.println("Paying from a credit card the amount of " + amount);
+    }
+
+    ;
 
     public CreditCard(String owner, String cardNumber, String expMonth, String expYear) {
         super(owner);
